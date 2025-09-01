@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+
+    <title>calculater</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <div id="calculater">
+
+        <input id="display" readonly>
+
+        <div id="keys">
+            <button onclick="cleardisplay()" class="left-btn">AC</button>
+
+            <button onclick="wrong()">❎</button>
+            <button onclick="appendvalue('%')">%</button>
+
+            <button onclick="appendvalue('/')">/</button>
+            <button onclick="appendvalue('7')" class="left-btn">7</button>
+            <button onclick="appendvalue('8')">8</button>
+            <button onclick="appendvalue('9')">9</button>
+            <button onclick="appendvalue('*')">*</button>
+            <button onclick="appendvalue('4')" class="left-btn">4</button>
+            <button onclick="appendvalue('5')">5</button>
+            <button onclick="appendvalue('6')">6</button>
+            <button onclick="appendvalue('-')">-</button>
+            <button onclick="appendvalue('1')" class="left-btn">1</button>
+            <button onclick="appendvalue('2')">2</button>
+            <button onclick="appendvalue('3')">3</button>
+            <button onclick="appendvalue('+')">+</button>
+            <button onclick="appendvalue('00')" class="left-btn">00</button>
+            <button onclick="appendvalue('0')">0</button>
+            <button onclick="appendvalue('.')">.</button>
+            <button onclick="calculate()">=</button>
+
+        </div>
+    </div>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
